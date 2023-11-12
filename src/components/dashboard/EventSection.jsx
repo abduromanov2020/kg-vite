@@ -8,6 +8,7 @@ import "./index.css";
 import { MdNavigateNext } from "react-icons/md";
 
 import { dashboard } from "../../data/dashboard";
+import { toast } from "react-hot-toast";
 
 export const EventSection = () => {
   const events = dashboard?.events;
@@ -96,7 +97,10 @@ export const EventSection = () => {
                       </section>
                     </section>
                     <section className="flex justify-between items-center">
-                      <button className="text-white w-[95%] lg:w-44 bg-yellow-500 text-sm py-3 px-4 mx-auto md:mx-0 rounded-md hover:bg-yellow-600 transition-colors ease-in-out duration-300">
+                      <button
+                        className="text-white w-[95%] lg:w-44 bg-yellow-500 text-sm py-3 px-4 mx-auto md:mx-0 rounded-md hover:bg-yellow-600 transition-colors ease-in-out duration-300"
+                        onClick={() => toast.success("Berhasil mendaftar acara")}
+                      >
                         Daftar Sekarang
                       </button>
                     </section>

@@ -1,16 +1,28 @@
 import { Suspense } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthLayout } from "../layout/AuthLayout";
 import { TextField } from "../../components/default/TextField";
 import { Checkbox } from "../../components/default/Checkbox";
 import { Button } from "../../components/default/Button";
 import { DashedText } from "../../components/default/DashedText";
-import { login } from "../../utils/auth/auth";
+import { toast } from "react-hot-toast";
 
 export const LoginModule = () => {
+  const navigate = useNavigate();
+
+  const login = (email, password) => {
+    if (email !== "" && password !== "") {
+      localStorage.setItem("username", email.split("@")[0]),
+        localStorage.setItem("email", email),
+        navigate("/dashboard");
+      return toast.success("Login success");
+    }
+    toast.error("Invalid email or password");
+  };
+
   const onSubmit = async (e) => {
     e.preventDefault();
-    await login(e.target[0].value, e.target[1].value);
+    login(e.target[0].value, e.target[1].value);
   };
 
   return (

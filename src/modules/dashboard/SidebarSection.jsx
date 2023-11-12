@@ -1,5 +1,3 @@
-import { ArticleSection } from "../../components/dashboard/ArticleSection";
-import { LeaderboardSection } from "../../components/dashboard/LeaderboardSection";
 import { ResumeSection } from "../../components/dashboard/ResumeSection";
 
 export const SideBarSection = () => {
@@ -7,9 +5,7 @@ export const SideBarSection = () => {
     <div className="flex flex-col lg:col-span-3 xl:col-span-1 col-span-3">
       <div className="flex xl:flex-col gap-x-10 md:flex-row flex-col">
         <ResumeSection />
-        <LeaderboardSection />
       </div>
-      <ArticleSection />
     </div>
   );
 };

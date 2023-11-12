@@ -61,9 +61,12 @@ export const ProgressSection = () => {
                       </div>
                     </div>
                     {subject?.progress_percentage < 100 ? (
-                      <button className="bg-primary-500 w-fit h-fit text-white text-sm font-medium px-5 py-2 hover:bg-primary-600 transition-colors ease-in-out duration-300 rounded-md justify-self-end">
+                      <Link
+                        to={`/studi-ku/${subject.name}/${subject.id}`}
+                        className="bg-primary-500 w-fit h-fit text-white text-sm font-medium px-5 py-2 hover:bg-primary-600 transition-colors ease-in-out duration-300 rounded-md justify-self-end"
+                      >
                         Lanjut Belajar
-                      </button>
+                      </Link>
                     ) : (
                       <button
                         disabled

@@ -5,7 +5,7 @@ import { Button } from "../../components/default/Button";
 import { useNavigate } from "react-router-dom";
 import { Fragment } from "react";
 import { Navbar } from "../../components/layout/Navbar";
-import { logout } from "../../utils/auth/auth";
+import { toast } from "react-hot-toast";
 
 const AuthButton = () => (
   <div className="flex gap-4">
@@ -29,6 +29,12 @@ const AuthButton = () => (
 
 export const BaseLayout = ({ addSearch }) => {
   const navigate = useNavigate();
+
+  const logout = () => {
+    localStorage.removeItem("username"), localStorage.removeItem("email");
+    navigate("/login");
+    toast.success("Logout success");
+  };
 
   const _pop_up_menu = [
     {
