@@ -3,7 +3,7 @@ import { BaseLayout } from "../modules/layout/BaseLayout";
 import { MajorSection } from "../modules/mystudy/MajorSection";
 import { SubjectSection } from "../modules/mystudy/SubjectSection";
 
-export const MyStudy = () => {
+const MyStudy = () => {
   const dataMajorProps = mystudy.dataMajor;
   const dataSubjectProps = mystudy.dataSubjects;
 
@@ -26,3 +26,5 @@ export const MyStudy = () => {
     </>
   );
 };
+
+export default MyStudy;

@@ -2,7 +2,7 @@ import { BaseLayout } from "../modules/layout/BaseLayout";
 import { BannerSection } from "../modules/penugasan/BannerSection";
 import { ContentSection } from "../modules/penugasan/ContentSection";
 
-export const Penugasan = () => {
+const Penugasan = () => {
   return (
     <>
       <BaseLayout title="Penugasan" />
@@ -13,3 +13,5 @@ export const Penugasan = () => {
     </>
   );
 };
+
+export default Penugasan;

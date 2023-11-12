@@ -6,7 +6,7 @@ import FooterCredit from "../components/footer/FooterCredit";
 import { useState } from "react";
 import { CertificateSection } from "../components/nilai-dan-sertifikat/CertificateSection";
 
-export const NilaiSertifikat = () => {
+const NilaiSertifikat = () => {
   const [detailStatus, setDetailStatus] = useState(false);
 
   return (
@@ -63,3 +63,5 @@ export const NilaiSertifikat = () => {
     </>
   );
 };
+
+export default NilaiSertifikat;

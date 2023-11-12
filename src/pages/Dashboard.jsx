@@ -2,7 +2,7 @@ import { ContentSection } from "../modules/dashboard/ContentSection";
 import { SideBarSection } from "../modules/dashboard/SidebarSection";
 import { BaseLayout } from "../modules/layout/BaseLayout";
 
-export const Dashboard = () => {
+const Dashboard = () => {
   return (
     <>
       <BaseLayout title="Dashboard" />
@@ -17,3 +17,5 @@ export const Dashboard = () => {
     </>
   );
 };
+
+export default Dashboard;
