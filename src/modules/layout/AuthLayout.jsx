@@ -24,7 +24,7 @@ const slides = [
   },
   {
     src: "/images/layout/loginImg3.svg",
-    title: "Terdapat 16 fitur yang membantu kamu",
+    title: "Terdapat 4 fitur yang membantu kamu",
     description: "Dibimbing oleh mentor yang profesional, Dukungan untuk karir masa depan",
   },
 ];

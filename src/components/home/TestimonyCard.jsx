@@ -16,7 +16,7 @@ export const TestimonyCard = (props) => {
         </span>
       </div>
       <div>
-        <p className="text-neutral-500 text-[16px] pt-[24px]">{props.desc.substring(0, 100)}</p>
+        <p className="text-neutral-500 text-[16px] pt-[24px]">{props.desc}</p>
       </div>
     </div>
   );

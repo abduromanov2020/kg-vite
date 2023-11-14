@@ -22,7 +22,7 @@ export const NavbarFeatureMenu = ({ features }) => {
           <div className="bg-[#FEEAA2] h-[108px] w-[240px] md:w-[270px] flex gap-1 flex-col items-center justify-center">
             <h1 className="text-neutral-800 font-bold text-xl">Fitur</h1>
             <p className="text-white bg-[#FAB317] text-sm px-2.5 py-1.5 rounded-lg shadow-sm">
-              Total 16 Fitur
+              Total 4 Fitur
             </p>
           </div>
           <div className="grid grid-cols-2 ">

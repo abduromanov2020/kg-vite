@@ -27,7 +27,7 @@ export const SubjectDetailsModule = ({ subjectId }) => {
         <p className="text-lg font-normal text-neutral-800 text-justify">
           {dataSubjectDetails?.description
             ? dataSubjectDetails?.description
-            : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veritatis ducimus enim inventore odio sunt sequi obcaecati cumque qui rem quod animi, ab distinctio nemo nam, accusantium quam, repellendus odit!"}
+            : "Tidak ada deskripsi"}
         </p>
       </div>
 

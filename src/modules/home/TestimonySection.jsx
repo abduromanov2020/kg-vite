@@ -40,31 +40,31 @@ const TestimonySection = () => {
     {
       name: "Naza Zulfiqi",
       job: "Frontend Developer",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quia sequi eos maiores veniam possimus est distinctio exercitationem quas reiciendis. Voluptate fuga vitae a, aperiam temporibus asperiores quidem adipisci sed?",
+      desc: "Program Kampus Gratis sangat membantu saya dalam mempelajari teknologi terbaru, terutama dalam bidang frontend. Terima kasih Kampus Gratis!",
       src: "/images/home/testimony/testimony-1.png",
     },
     {
       name: "John Doe",
       job: "UI Designer",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quia sequi eos maiores veniam possimus est distinctio exercitationem quas reiciendis. Voluptate fuga vitae a, aperiam temporibus asperiores quidem adipisci sed?",
+      desc: "UI Design yang diajarkan di Kampus Gratis sangat mudah dipahami dan sangat membantu saya dalam mempelajari UI Design. Terima kasih Kampus Gratis!",
       src: "/images/home/testimony/testimony-1.png",
     },
     {
       name: "Zidane Arvito",
       job: "Backend Developer",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quia sequi eos maiores veniam possimus est distinctio exercitationem quas reiciendis. Voluptate fuga vitae a, aperiam temporibus asperiores quidem adipisci sed?",
+      desc: "Backend Development yang diajarkan di Kampus Gratis sangat mudah dipahami dan sangat membantu saya dalam mempelajari Backend Development. Terima kasih Kampus Gratis!",
       src: "/images/home/testimony/testimony-1.png",
     },
     {
       name: "Fakhri Haromain",
       job: "Backend Developer",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quia sequi eos maiores veniam possimus est distinctio exercitationem quas reiciendis. Voluptate fuga vitae a, aperiam temporibus asperiores quidem adipisci sed?",
+      desc: "Backend Development yang diajarkan di Kampus Gratis sangat mudah dipahami dan sangat membantu saya dalam mempelajari Backend Development. Terima kasih Kampus Gratis!",
       src: "/images/home/testimony/testimony-1.png",
     },
     {
       name: "Daffa Reyhan",
       job: "Backend Developer",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quia sequi eos maiores veniam possimus est distinctio exercitationem quas reiciendis. Voluptate fuga vitae a, aperiam temporibus asperiores quidem adipisci sed?",
+      desc: "Backend Development yang diajarkan di Kampus Gratis sangat mudah dipahami dan sangat membantu saya dalam mempelajari Backend Development. Terima kasih Kampus Gratis!",
       src: "/images/home/testimony/testimony-1.png",
     },
   ];
