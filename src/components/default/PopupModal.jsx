@@ -23,7 +23,7 @@ export const PopupModal = ({
       hasButton={hasButton}
     >
       <div
-        className={`flex flex-col items-center justify-center w-full py-10 text-center dark:bg-[#222529] ${className}`}
+        className={`flex flex-col items-center justify-center w-full py-10 text-center ${className}`}
       >
         {icon ? (
           <>

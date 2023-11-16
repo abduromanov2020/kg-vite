@@ -18,14 +18,14 @@ export const Modal = ({
     <Fragment>
       {lookup && (
         <div
-          className="relative z-50 "
+          className="relative z-50"
           aria-labelledby="modal-title"
           role="dialog"
           aria-modal="true"
         >
           <div className="fixed inset-0 transition-opacity bg-opacity-25 bg-neutral-500 " />
-          <div className="fixed inset-0 z-10 overflow-y-auto">
-            <div className="flex items-center justify-center w-full min-h-full p-4 text-center sm:items-center sm:p-0">
+          <div className="fixed inset-0 z-10">
+            <div className="flex items-center justify-center w-1/2 min-h-full p-4 text-center sm:items-center sm:p-0 mx-auto">
               <div
                 className={`relative w-auto overflow-hidden text-left transition-all transform rounded-lg shadow-xl sm:my-8 ${widthModal} `}
               >

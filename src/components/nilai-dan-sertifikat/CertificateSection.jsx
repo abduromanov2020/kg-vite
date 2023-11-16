@@ -9,7 +9,7 @@ export const CertificateSection = () => {
   const dataCertif = certificate;
   const [open, setOpen] = useState(false);
   const [filter, setFilter] = useState("SEMUA");
-  const { popupStatus, setPopupStatus } = useState(false);
+  const [popupStatus, setPopupStatus] = useState(false);
 
   return (
     <div className="w-full">
