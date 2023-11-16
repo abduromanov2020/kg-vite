@@ -13,9 +13,9 @@ export const CertificateSection = () => {
 
   return (
     <div className="w-full">
-      <div className="flex justify-end  ">
+      <div className="flex justify-end">
         <button
-          className="w-[109px] h-[40px] rounded-[8px] text-center border-[3px] border-primary-500 relative "
+          className="w-[109px] h-[40px] rounded-[8px] text-center border-[3px] border-primary-500 relative"
           onClick={() => setOpen(open == true ? false : true)}
         >
           <div className="my-auto flex justify-center gap-[10px] items-center">
@@ -79,9 +79,20 @@ export const CertificateSection = () => {
                     src={item?.thumbnail_link}
                     imgwidth={100}
                     imgheight={100}
-                    className={"container mx-auto w-full h-full rounded-[8px] p-[12px] bg-white "}
+                    className={
+                      "container mx-auto w-full h-full rounded-[8px] p-[12px] bg-white relative"
+                    }
                     onClick={() => setPopupStatus(true)}
                   >
+                    <div className="h-full w-full absolute top-0 left-0 bg-neutral-900/20 rounded-[8px] opacity-0 hover:opacity-100">
+                      <div className="flex justify-center items-center h-full text-white">
+                        <div className="flex justify-center gap-3">
+                          <div>
+                            <img src="/icons/ic-download.svg" alt={"download-icon"} width={50} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div className="w-full mt-[12px]">
                       <h1 className="text-center text-neutral-900 text-[18px] font-[500]">
                         {item?.subject_certificate?.name}
