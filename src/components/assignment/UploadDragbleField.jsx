@@ -37,7 +37,7 @@ export const UploadDragbleField = (props) => {
       )}
       <label className="flex flex-col items-center w-full px-4 py-6 bg-[#F5F5F5] dark:bg-transparent rounded-lg cursor-pointer">
         <img src="/icons/ic-file.svg" alt="" />
-        <span className="mt-2 text-xs md:text-sm lg:text-sm text-center text-black font-semibold dark:text-white">
+        <span className="mt-2 text-xs md:text-sm lg:text-sm text-center text-black font-semibold">
           Seret, taruh dan <span className="text-blue-base">pilih file</span> untuk mengunggah
         </span>
         <span className="flex justify-center items-center text-xs md:text-sm lg:text-sm mt-2 rounded-lg border overflow-hidden">

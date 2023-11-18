@@ -168,6 +168,8 @@ export const ContentSection = () => {
                 .map((item) => (
                   <PenugasanCard
                     key={item.assignment_id}
+                    courseId={item.subject_id}
+                    assignmentId={item.assignment_session_id}
                     titleAssigment={item.assignment_title}
                     category={
                       item.progress_status === "ONGOING"

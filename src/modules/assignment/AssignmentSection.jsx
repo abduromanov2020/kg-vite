@@ -1,11 +1,14 @@
 import { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Button } from "../../components/default/Button";
 import { UploadDragbleField } from "../../components/assignment/UploadDragbleField";
 import { assignment } from "../../data/assignment";
 
 export const AssignmentSection = () => {
-  const getMyStudyAssignmentItem = assignment;
+  const { sessionId } = useParams();
+  const getMyStudyAssignmentItem = assignment.find((item) => item.session_id === sessionId);
+
+  console.log(getMyStudyAssignmentItem);
 
   function timestampRemainingHandler(timestamp_taken, deadline) {
     const timestamp_taken_formatted = new Date(timestamp_taken);
@@ -13,7 +16,7 @@ export const AssignmentSection = () => {
 
     const time_difference = deadline_formatted.getTime() - timestamp_taken_formatted.getTime();
 
-    if (time_difference < 0) {
+    if (getMyStudyAssignmentItem?.student_progress?.is_late === true) {
       return "Telah melewati batas waktu";
     }
 
@@ -37,7 +40,9 @@ export const AssignmentSection = () => {
         getMyStudyAssignmentItem?.student_progress?.assignment_answer === null ||
         getMyStudyAssignmentItem?.student_progress?.assignment_answer.length < 1
           ? "Belum Mengumpulkan"
-          : "Terkirim",
+          : getMyStudyAssignmentItem?.student_progress?.status === "FINISHED"
+          ? "Terkirim"
+          : "Terlambat",
     },
     {
       namaTabel: "Status Penilaian",
@@ -68,6 +73,8 @@ export const AssignmentSection = () => {
             ]),
     },
   ];
+
+  console.log(tabelState);
 
   const lateState = () => {
     if (tabelState[3].response === "Telah melewati batas waktu") {
@@ -133,7 +140,11 @@ export const AssignmentSection = () => {
                   ${
                     row.response === "Belum Mengumpulkan"
                       ? lateState()
-                      : row.response === "Terkirim" && "bg-success-200"
+                      : row.response === "Terkirim"
+                      ? "bg-success-200"
+                      : row.response === "Terlambat"
+                      ? "bg-warning-100/80 text-warning-500"
+                      : ""
                   }
                   ${row.response === "Telah melewati batas waktu" && "text-warning-500 font-bold"}`}
                     >
