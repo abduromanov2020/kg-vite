@@ -6,7 +6,7 @@ const GlimpseSection = () => {
 
   return (
     <section className="bg-blue-base w-full mt-20 text-white px-8 py-5 lg:py-10">
-      <div className="lg:flex mx-auto max-w-[1440px]">
+      <div className="flex lg:justify-between md:flex-wrap md:justify-center max-w-[1440px] mx-auto">
         <div className="w-full lg:w-1/2 py-5 lg:py-20">
           <h1 className="text-4xl font-bold">
             Sekilas Info <span className="text-orange-base ">Kampus Gratis</span>
@@ -38,13 +38,13 @@ const GlimpseSection = () => {
             <Button
               type="button"
               onClick={() => setIsHidden(!isHidden)}
-              className="text-blue-base text-white  bg-transparent py-3 px-12 text-lg rounded-lg"
+              className="text-blue-base text-white py-3 px-12 text-lg rounded-lg bg-transparent border-2 border-white hover:bg-white hover:text-blue-base"
             >
               Lihat Semua
             </Button>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 flex justify-center items-center ">
+        <div className="flex justify-center items-center">
           <img
             width={0}
             height={0}

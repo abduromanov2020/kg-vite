@@ -13,8 +13,8 @@ const HeroSection = () => {
         />
         <div className="max-w-[1440px] mx-auto relative">
           <div className="pt-12 px-6 lg:px-0">
-            <div className="flex flex-wrap">
-              <div className="w-full md:w-1/2 self-center px-6 2xl:px-0">
+            <div className="flex lg:justify-between md:flex-wrap md:justify-center">
+              <div className="self-center px-6 2xl:px-0">
                 <h1 className="w-full md:w-[751px] md:text-[44px] md:leading-[54px] text-center md:text-start text-white text-2xl font-bold leading-[34px]">
                   Pendidikan Berkualitas Tanpa Biaya
                 </h1>
@@ -34,7 +34,7 @@ const HeroSection = () => {
                   </Button>
                 </div>
               </div>
-              <div className="w-full md:w-full md:flex md:justify-center lg:w-1/2">
+              <div className="md:flex md:justify-center">
                 <img
                   src="/images/home/hero/hero-image.png"
                   sizes="100vw"

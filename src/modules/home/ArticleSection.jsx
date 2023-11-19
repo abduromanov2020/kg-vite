@@ -1,4 +1,3 @@
-import { Button } from "../../components/default/Button";
 import { GlimpseKnowledgeCard } from "../../components/home/GlimpseKnowledgeCard";
 import { data_article } from "../../data/article";
 
@@ -27,14 +26,6 @@ const ArticleSection = () => {
         {data_article.map((item) => (
           <GlimpseKnowledgeCard key={item.id} data={item} />
         ))}
-      </div>
-      <div className="flex w-full justify-center items-center pt-8">
-        <Button
-          type="button"
-          className="bg-blue-base text-white font-semibold p-3 rounded-lg w-[328px]"
-        >
-          Lihat Semua
-        </Button>
       </div>
     </section>
   );
