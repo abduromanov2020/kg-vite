@@ -7,13 +7,15 @@ export const certificate = [
     type: "EVENT",
     id_certificate: "3U3P1RTZAFRI",
     file: "3U3P1RTZAFRI-Student 2-event-certificate.pdf",
-    link: "http://res.cloudinary.com/dz5pv99lp/image/upload/v1/certificates/YHIOK0OMBNV3-kakakaka-certificate",
+    link: "/images/certificate/certif-1.png",
     thumbnail: "3U3P1RTZAFRI-Student 2.png",
     thumbnail_link:
       "http://res.cloudinary.com/dz5pv99lp/image/upload/v1/certificates/thumbnail/YHIOK0OMBNV3-kakakaka-certificate",
-    subject_certificate: null,
+    subject_certificate: {
+      name: "Event 1",
+    },
     event_certificate: {
-      name: "Event 2",
+      name: "Event 1",
     },
   },
   {
@@ -41,7 +43,7 @@ export const certificate = [
     type: "SUBJECT",
     id_certificate: "YHIOK0OMBNV3",
     file: "YHIOK0OMBNV3-kakakaka-certificate.pdf",
-    link: "http://res.cloudinary.com/dz5pv99lp/image/upload/v1/certificates/YHIOK0OMBNV3-kakakaka-certificate",
+    link: "/images/certificate/certif-1.png",
     thumbnail: "YHIOK0OMBNV3-kakakaka.png",
     thumbnail_link:
       "http://res.cloudinary.com/dz5pv99lp/image/upload/v1/certificates/thumbnail/YHIOK0OMBNV3-kakakaka-certificate",

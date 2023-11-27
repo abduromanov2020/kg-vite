@@ -398,13 +398,7 @@ export const assignment = [
       type: "ASSIGNMENT",
       score: null,
       is_late: true,
-      assignment_answer: [
-        {
-          document_url:
-            "https://res.cloudinary.com/dz5pv99lp/image/upload/v1698740940/assignment_submission/assignment_b4a28630-c423-4f14-a2b2-73eb2b011d35.pdf",
-          document_filename: "dumdum.pdf",
-        },
-      ],
+      assignment_answer: [],
       timestamp_taken: "2023-10-21 05:19:49",
       timestamp_submitted: "2023-10-31 15:29:00",
       deadline: "2023-10-26 05:19:49",

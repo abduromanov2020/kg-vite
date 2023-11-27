@@ -8,8 +8,6 @@ export const AssignmentSection = () => {
   const { sessionId } = useParams();
   const getMyStudyAssignmentItem = assignment.find((item) => item.session_id === sessionId);
 
-  console.log(getMyStudyAssignmentItem);
-
   function timestampRemainingHandler(timestamp_taken, deadline) {
     const timestamp_taken_formatted = new Date(timestamp_taken);
     const deadline_formatted = new Date(deadline);
@@ -74,14 +72,6 @@ export const AssignmentSection = () => {
     },
   ];
 
-  console.log(tabelState);
-
-  const lateState = () => {
-    if (tabelState[3].response === "Telah melewati batas waktu") {
-      return "bg-warning-550";
-    }
-    return "bg-transparent";
-  };
   return (
     <div className="bg-neutral-50">
       <section className="max-w-[1440px] mx-auto lg:pt-12 lg:pb-20 md:py-10 py-5 lg:px-32 md:px-14 px-7">
@@ -138,9 +128,7 @@ export const AssignmentSection = () => {
                         row.namaTabel === "Pengiriman Tugas" && "text-primary-500 flex-col gap-y-2"
                       }
                   ${
-                    row.response === "Belum Mengumpulkan"
-                      ? lateState()
-                      : row.response === "Terkirim"
+                    row.response === "Terkirim"
                       ? "bg-success-200"
                       : row.response === "Terlambat"
                       ? "bg-warning-100/80 text-warning-500"

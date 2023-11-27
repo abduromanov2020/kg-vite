@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { RxSlider } from "react-icons/rx";
-import { Link } from "react-router-dom";
 import { certificate } from "../../data/certificate";
 import { Card } from "../default/Card";
 import { PopupModal } from "../default/PopupModal";
@@ -79,20 +78,10 @@ export const CertificateSection = () => {
                     src={item?.thumbnail_link}
                     imgwidth={100}
                     imgheight={100}
-                    className={
-                      "container mx-auto w-full h-full rounded-[8px] p-[12px] bg-white relative"
-                    }
+                    className={"container mx-auto w-full h-full rounded-[8px] p-[12px] bg-white"}
                     onClick={() => setPopupStatus(true)}
+                    download
                   >
-                    <div className="h-full w-full absolute top-0 left-0 bg-neutral-900/20 rounded-[8px] opacity-0 hover:opacity-100">
-                      <div className="flex justify-center items-center h-full text-white">
-                        <div className="flex justify-center gap-3">
-                          <div>
-                            <img src="/icons/ic-download.svg" alt={"download-icon"} width={50} />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     <div className="w-full mt-[12px]">
                       <h1 className="text-center text-neutral-900 text-[18px] font-[500]">
                         {item?.subject_certificate?.name}
@@ -114,19 +103,17 @@ export const CertificateSection = () => {
                       onClose={() => setPopupStatus(false)}
                       className={"!py-2"}
                     >
-                      <div className="flex md:flex-row flex-col md:gap-3 gap-0 items-center ">
-                        <Link to={item?.link} download>
+                      <div className="flex md:flex-row flex-col md:gap-3 gap-0 items-center justify-center">
+                        <a href={item?.link} download>
                           <button className="w-[230px] h-[56px] bg-primary-500 rounded-[8px] text-white mb-3 md:mb-0">
                             <div className=" flex justify-center gap-3">
                               <div>
                                 <img src="/icons/ic-download.svg" alt={"download-icon"} />
                               </div>
-
                               <div>Unduh</div>
                             </div>
                           </button>
-                        </Link>
-
+                        </a>
                         <button
                           className="w-[230px] h-[56px] border-primary-500 border-2 rounded-[8px] text-primary-500 "
                           onClick={() => setPopupStatus(false)}
@@ -197,7 +184,7 @@ export const CertificateSection = () => {
                       className={"!py-2"}
                     >
                       <div className="flex md:flex-row flex-col md:gap-3 gap-0 items-center ">
-                        <Link to={item?.link} download>
+                        <a href={item?.link} download>
                           <button className="w-[230px] h-[56px] bg-primary-500 rounded-[8px] text-white mb-3 md:mb-0">
                             <div className=" flex justify-center gap-3">
                               <div>
@@ -207,7 +194,7 @@ export const CertificateSection = () => {
                               <div>Unduh</div>
                             </div>
                           </button>
-                        </Link>
+                        </a>
 
                         <button
                           className="w-[230px] h-[56px] border-primary-500 border-2 rounded-[8px] text-primary-500 "
