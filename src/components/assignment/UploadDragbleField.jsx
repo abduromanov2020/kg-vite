@@ -35,7 +35,7 @@ export const UploadDragbleField = (props) => {
           <AiOutlineCloseCircle color="#e63a3a" size={30} />
         </div>
       )}
-      <label className="flex flex-col items-center w-full px-4 py-6 bg-[#F5F5F5] dark:bg-transparent rounded-lg cursor-pointer">
+      <div className="flex flex-col items-center w-full px-4 py-6 bg-[#F5F5F5] dark:bg-transparent rounded-lg cursor-pointer">
         <img src="/icons/ic-file.svg" alt="" />
         <span className="mt-2 text-xs md:text-sm lg:text-sm text-center text-black font-semibold">
           Seret, taruh dan <span className="text-blue-base">pilih file</span> untuk mengunggah
@@ -53,7 +53,7 @@ export const UploadDragbleField = (props) => {
           className="hidden"
           type="file"
         />
-      </label>
+      </div>
     </div>
   );
 };
