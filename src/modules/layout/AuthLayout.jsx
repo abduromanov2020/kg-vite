@@ -49,7 +49,7 @@ const SliderLayout = () => {
         className="flex justify-center gap-3 mt-6 items-center min-h-fit"
       >
         {slides.map((item, i) => (
-          <SwiperSlide key={i} className="flex justify-center">
+          <SwiperSlide key={i} className="flex justify-center flex-col">
             <figure className="flex justify-center h-[300px]">
               <img
                 src={item.src}
