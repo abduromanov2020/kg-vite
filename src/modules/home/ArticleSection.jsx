@@ -22,7 +22,7 @@ const ArticleSection = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[15px] mx-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[15px]">
         {data_article.map((item) => (
           <GlimpseKnowledgeCard key={item.id} data={item} />
         ))}

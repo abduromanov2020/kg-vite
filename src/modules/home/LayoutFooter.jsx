@@ -5,7 +5,7 @@ const LayoutFooter = () => {
   return (
     <>
       <div className="w-full bg-[#F5F5F5]">
-        <div className="z-40   px-8 md:px-14 lg:px-16 py-6 gap-x-10 gap-y-10 lg:gap-x-14 xl:gap-y-20 grid grid-cols-3 w-full max-w-[1440px] mx-auto">
+        <div className="z-40 py-6 gap-x-10 gap-y-10 lg:gap-x-14 xl:gap-y-20 grid grid-cols-3 w-full max-w-[1440px] mx-auto">
           <section className="pr-0  mb-4 col-span-3  lg:col-span-1">
             <Link to={"/"}>
               <img
@@ -100,7 +100,7 @@ const LayoutFooter = () => {
         <div className="w-full py-6">
           <section className="w-full max-w-[1440px] mx-auto text-center md:flex md:px-14 lg:px-16 text-[#737373] ">
             <div className="w-full md:flex md:w-1/2">
-              <h1 className="text-sm">2022 - www.kampusgratis.id - Hak Cipta Dilindungi.</h1>
+              <h1 className="text-sm">2024 - www.kampusgratis.id - Hak Cipta Dilindungi.</h1>
             </div>
             <div className="w-full md:w-1/2 md:flex justify-end text-sm gap-x-8">
               <Link to={"/"} className="pr-4">

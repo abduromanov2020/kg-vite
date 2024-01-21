@@ -2,7 +2,7 @@ import { Button } from "../default/Button";
 
 export const ChoiceProgramCard = (props) => {
   return (
-    <section className="flex flex-col border border-neutral-300 w-auto rounded-lg h-auto bg-white pb-4 my-5">
+    <section className="flex flex-col border border-neutral-300 w-full rounded-lg h-auto bg-white pb-4 my-5">
       <img
         src={props.src}
         alt={"card-landing"}

@@ -23,7 +23,7 @@ const FacultySection = () => {
   ];
 
   return (
-    <section className="lg:flex flex-col gap-y-[20px] px-8 py-5 mx-auto max-w-[1440px]">
+    <section className="lg:flex flex-col gap-y-[20px] py-5 mx-auto max-w-[1440px]">
       <h1 className="absolute z-40 text-black font-[700] text-[36px]">Pilihan Fakultas</h1>
       <div className="flex absolute z-0 mt-4">
         <img

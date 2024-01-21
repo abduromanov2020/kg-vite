@@ -62,7 +62,7 @@ const ProgramSection = () => {
   }, []);
 
   return (
-    <section className="lg:flex flex-col pt-20 px-8 w-full max-w-[1440px] mx-auto shadow-lg pb-8">
+    <section className="lg:flex flex-col pt-20 w-full max-w-[1440px] mx-auto pb-8">
       <h1 className="text-blue-base font-bold text-[36px] leading-none lg:w-[329px]">
         Program Kami <span className="text-orange-base ">yang tersedia</span>
       </h1>
