@@ -107,6 +107,7 @@ export const TextField = ({
         {!isTextArea ? (
           <input
             type={type === "password" ? (!showPassword ? type : "text") : type}
+            minLength={type === "password" ? 8 : undefined}
             className={`${inputDefaultStyle} ${inputStatus} ${inputVariant}  ${inputExtras} `}
           />
         ) : (

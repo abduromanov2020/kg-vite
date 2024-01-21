@@ -4,7 +4,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Login from "./pages/Login";
 import PrivateRoutes from "./utils/PrivateRoutes";
 import Dashboard from "./pages/Dashboard";
-import MyStudy from "./pages/Mystudy";
+import MyStudy from "./pages/MyStudy";
 import Penugasan from "./pages/Penugasan";
 import NilaiSertifikat from "./pages/NilaiSertifikat";
 import SubjectDetail from "./pages/SubjectDetail";
