@@ -15,7 +15,7 @@ export const AssignmentSection = () => {
     const time_difference = deadline_formatted.getTime() - timestamp_taken_formatted.getTime();
 
     if (getMyStudyAssignmentItem?.student_progress?.is_late === true) {
-      return "Telah melewati batas waktu";
+      return "12 jam 36 menit 12 detik";
     }
 
     const seconds = Math.floor(time_difference / 1000) % 60;
@@ -134,7 +134,7 @@ export const AssignmentSection = () => {
                       ? "bg-warning-100/80 text-warning-500"
                       : ""
                   }
-                  ${row.response === "Telah melewati batas waktu" && "text-warning-500 font-bold"}`}
+                  ${row.response === "12 jam 36 menit 12 detik" && "text-warning-500 font-bold"}`}
                     >
                       {row.namaTabel === "Pengiriman Tugas" ? (
                         row.response instanceof Array && row.response.length > 0 ? (

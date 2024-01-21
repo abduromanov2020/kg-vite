@@ -131,11 +131,12 @@ export const ModuleContentSection = ({ dataParams }) => {
                   ))}
                 </div>
               </section>
-              <div className="w-fit lg:mt-16 md:mt-10 mt-7 mb-5 mx-auto">
+              <div className="w-full border-t rounded-lg border-gray-300 my-6"></div>
+              <div className="w-fit lg:mt-3 mb-5 ml-1">
                 <div className="flex gap-2 items-center">
                   <img src={"/images/module/done-icon.svg"} alt="done-icon" />
                   <h3 className="font-semibold lg:text-lg md:text-base text-sm">
-                    Kamu sudah menyelesaikan modul ini !
+                    kamu bisa mengakses modul ini
                   </h3>
                 </div>
               </div>
