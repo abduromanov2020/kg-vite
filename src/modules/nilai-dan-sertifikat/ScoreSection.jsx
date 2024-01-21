@@ -1,7 +1,7 @@
 import { ContentLayouts } from "../../components/nilai-dan-sertifikat/ContentLayout";
 import { SummaryChart } from "../../components/nilai-dan-sertifikat/SummaryChart";
 import { SummaryTable } from "../../components/nilai-dan-sertifikat/SummaryTable";
-import { ScoreDetail } from "../../components/nilai-dan-sertifikat/scoreDetail";
+import { ScoreDetail } from "../../components/nilai-dan-sertifikat/ScoreDetail";
 
 const ScoreSection = ({ detailStatus, setDetailStatus }) => {
   return (
