@@ -175,7 +175,8 @@ export const AssignmentSection = () => {
               })}
             </div>
           </div>
-          {searchParams.get("upload") === "true" ? (
+          {searchParams.get("upload") === "true" ||
+          getMyStudyAssignmentItem?.student_progress.assignment_answer.length !== 0 ? (
             <div
               className={`flex items-center min-h-[300px] bg-neutral-100 justify-center relative w-full p-2 rounded-lg border-dashed border-2 border-neutral-300 mt-[28px]`}
             >
