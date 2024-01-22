@@ -38,8 +38,10 @@ export const AssignmentSection = () => {
     {
       namaTabel: "Status Pengumpulan",
       response:
-        getMyStudyAssignmentItem?.student_progress?.assignment_answer === null ||
-        getMyStudyAssignmentItem?.student_progress?.assignment_answer.length < 1
+        searchParams.get("upload") === "true"
+          ? "Terkirim"
+          : getMyStudyAssignmentItem?.student_progress?.assignment_answer === null ||
+            getMyStudyAssignmentItem?.student_progress?.assignment_answer.length < 1
           ? "Belum Mengumpulkan"
           : getMyStudyAssignmentItem?.student_progress?.status === "FINISHED"
           ? "Terkirim"
