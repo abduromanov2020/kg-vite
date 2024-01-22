@@ -105,7 +105,7 @@ export const AssignmentSection = () => {
             {getMyStudyAssignmentItem?.assignment?.timestamp_created} WIB
           </p>
           <p className="text-[16px] font-normal">
-            Silahkan baca dan kerjakan tugas pada modul berikut ini.
+            Silahkan baca dan analisis jurnal mengenai Data Science! (Minimal 2 jurnal)
           </p>
           <div className="flex-col gap-y-2">
             {getMyStudyAssignmentItem?.assignment?.assignment_documents?.map((document, i) => (
