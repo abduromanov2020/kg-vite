@@ -69,21 +69,16 @@ export const TaskSection = () => {
                       </section>
                     </div>
                   </section>
-                  <section className="flex flex-col md:flex-row justify-between gap-4 items-center">
-                    {/* <button className="text-white w-[95%] lg:w-44 mx-auto md:mx-0  mb-2  bg-primary-500 text-xs lg:text-sm py-3 px-4 rounded-md hover:bg-primary-600 transition-colors ease-in-out duration-300">
-                      Kerjakan Sekarang
-                    </button> */}
 
-                    <div
-                      style={{ color: "red" }}
-                      className="text-red-500 lg:justify-end flex items-center gap-2 text-xs lg:text-sm w-52"
-                    >
-                      <AiFillWarning className="text-lg" />
-                      <h1 className="text-sm">
-                        Terakhir {changeFormatToDate(assignment?.progress_deadline)}
-                      </h1>
-                    </div>
-                  </section>
+                  <div
+                    style={{ color: "red" }}
+                    className="text-red-500 flex items-center text-xs lg:text-sm w-52"
+                  >
+                    <AiFillWarning className="text-lg mr-2" />
+                    <h1 className="text-sm">
+                      Terakhir {changeFormatToDate(assignment?.progress_deadline)}
+                    </h1>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}
