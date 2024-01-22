@@ -61,7 +61,7 @@ export const LoginModule = () => {
               Masuk
             </Button>
 
-            <DashedText text="Atau" />
+            {/* <DashedText text="Atau" />
 
             <Button
               onClick={() => {}}
@@ -76,7 +76,7 @@ export const LoginModule = () => {
               <Link className="text-primary-600" href={"/auth/register"}>
                 Daftar Disini
               </Link>
-            </div>
+            </div> */}
           </div>
         </form>
       </AuthLayout>
