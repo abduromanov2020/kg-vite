@@ -1,11 +1,14 @@
-import { Fragment } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Fragment, useState } from "react";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 import { Button } from "../../components/default/Button";
 import { UploadDragbleField } from "../../components/assignment/UploadDragbleField";
 import { assignment } from "../../data/assignment";
+import { toast } from "react-hot-toast";
 
 export const AssignmentSection = () => {
   const { sessionId } = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [field, setField] = useState(null);
   const getMyStudyAssignmentItem = assignment.find((item) => item.session_id === sessionId);
 
   function timestampRemainingHandler(timestamp_taken, deadline) {
@@ -71,6 +74,15 @@ export const AssignmentSection = () => {
             ]),
     },
   ];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setSearchParams({ pages: "penugasan", upload: true });
+    toast.success("Tugas berhasil diunggah");
+
+    console.log(searchParams.get("upload"));
+  };
 
   return (
     <div className="bg-neutral-50">
@@ -163,23 +175,38 @@ export const AssignmentSection = () => {
               })}
             </div>
           </div>
-          <form>
-            <UploadDragbleField
-              name="files"
-              className="border-dashed border-2 border-neutral-300 mt-[28px]"
-              variant={"sm"}
-            />
-            <p className="text-neutral-base text-[14px] font-medium my-[24px]">
-              <span className="font-semibold">Note</span> : Pastikan berkas sudah sesuai dengan
-              ketentuan
-            </p>
-            <Button
-              type={"submit"}
-              className={`mx-auto py-6 lg:py-0 w-full h-[27px] md:w-[160px] md:h-[48px] text-[16px] font-medium  text-white disabled:bg-neutral-300 disabled:text-neutral-300 flex gap-x-2 rounded justify-center items-center hover:opacity-50 transition-opacity duration-300 ${"bg-primary-500 cursor-pointer"}`}
+          {searchParams.get("upload") === "true" ? (
+            <div
+              className={`flex items-center min-h-[300px] bg-neutral-100 justify-center relative w-full p-2 rounded-lg border-dashed border-2 border-neutral-300 mt-[28px]`}
             >
-              {"Unggah Tugas"}
-            </Button>
-          </form>
+              <div className="flex flex-col items-center w-full px-4 py-6 bg-[#F5F5F5] dark:bg-transparent rounded-lg">
+                <img src="/icons/checklist.svg" alt="" width="50px" />
+                <span className="mt-2 text-xs md:text-sm lg:text-sm text-center text-black font-semibold">
+                  Tugas berhasil diunggah, silahkan tunggu penilaian dari pengajar
+                </span>
+              </div>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit}>
+              <UploadDragbleField
+                name="files"
+                className="border-dashed border-2 border-neutral-300 mt-[28px]"
+                variant={"sm"}
+                field={field}
+                setField={setField}
+              />
+              <p className="text-neutral-base text-[14px] font-medium my-[24px]">
+                <span className="font-semibold">Note</span> : Pastikan berkas sudah sesuai dengan
+                ketentuan
+              </p>
+              <Button
+                type={"submit"}
+                className={`mx-auto py-6 lg:py-0 w-full h-[27px] md:w-[160px] md:h-[48px] text-[16px] font-medium  text-white disabled:bg-neutral-300 disabled:text-neutral-300 flex gap-x-2 rounded justify-center items-center hover:opacity-50 transition-opacity duration-300 ${"bg-primary-500 cursor-pointer"}`}
+              >
+                {"Unggah Tugas"}
+              </Button>
+            </form>
+          )}
         </div>
       </section>
     </div>

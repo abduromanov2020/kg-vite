@@ -22,7 +22,7 @@ export const PenugasanCard = ({
         <div className=" basis-3/4">
           <div className="banner px-8 py-9">
             <Link
-              to={`/studi-ku/${titleCourse}/${courseId}/tugas/${assignmentId}`}
+              to={`/studi-ku/${titleCourse}/${courseId}/tugas/${assignmentId}?pages=penugasan`}
               className="text-[20px] font-[700] dark:text-gray-600 cursor-pointer"
             >
               {titleAssigment}
